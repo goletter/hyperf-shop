@@ -1,0 +1,15 @@
+[Unit]
+Description=Hyperf Service
+Documentation=Hyperf
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/php bin/hyperf.php start
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+WorkingDirectory=/www/code/hyperf-shop
+
+[Install]
+WantedBy=multi-user.target
