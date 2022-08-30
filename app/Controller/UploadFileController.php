@@ -30,6 +30,7 @@ class UploadFileController extends BaseController
         $file = $request->file('file');
         $res = $serve->fileToOss($file);
         $url = $serve->oss->signUrl(config('oss.aliyun.bucket'), $res, config('oss.aliyun.expire'), 'GET');
+        // $imageInfo = getimagesize($url);
 
         return $this->response->json(['path' => $url]);
     }

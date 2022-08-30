@@ -46,6 +46,7 @@ class OssFileServer
             $file->getClientFilename(),
             $content
         );
+
         return $realName;
     }
 

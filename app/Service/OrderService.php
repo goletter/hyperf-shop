@@ -18,7 +18,6 @@ class OrderService
     public function createOrder($orderData)
     {
         return Db::transaction(function () {
-
         });
     }
 }
