@@ -39,6 +39,7 @@
         "hyperf/resource": "^2.2",
         "hyperf/utils": "^2.2",
         "hyperf/validation": "^2.2",
+        "naixiaoxin/hyperf-ide-helper": "^1.2",
         "reasno/swoole-aliyunoss-addon": "^1.0"
     },
     "require-dev": {
