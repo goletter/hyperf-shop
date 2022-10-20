@@ -1,6 +1,7 @@
 .buildpath
 .settings/
 .project
+_ide_helper_models.php
 *.patch
 .idea/
 .git/
